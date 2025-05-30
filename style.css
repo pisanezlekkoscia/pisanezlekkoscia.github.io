@@ -1,0 +1,118 @@
+
+body {
+  background-color: #f4f0fa;
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: #7c4d9e;
+}
+
+a {
+  color: #d04a89;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b03a74;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff6fb;
+  min-width: 220px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #f7eaf4;
+}
+
+.dropdown-content li a {
+  color: #444;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f7eaf4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cennik-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cennik-box {
+  background-color: #fff6fb;
+  border: 1px solid #f3d7e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.cennik-box:hover {
+  transform: scale(1.02);
+}
+
+.cennik-box h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #d04a89;
+}
+
+.cennik-box a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #d04a89;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.cennik-box a:hover {
+  background-color: #b03a74;
+}
+
+footer {
+  background-color: #f7eaf4;
+  text-align: center;
+  padding: 10px;
+  color: #555;
+  margin-top: 40px;
+}
