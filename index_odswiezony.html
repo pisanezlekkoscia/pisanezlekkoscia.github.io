@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pisane z lekkością</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo Pisane z lekkością" />
+        </div>
+        <h1>Dla Ciebie, dla Was...</h1>
+        <nav>
+            <ul>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#opinie">Opinie</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li class="dropdown">
+                    <a href="#">Cennik</a>
+                    <ul class="dropdown-content">
+                        <li><a href="cennik-wydarzenia.pdf" target="_blank">Organizacja wydarzeń</a></li>
+                        <li><a href="cennik-wieczor.pdf" target="_blank">Wieczór panieński / kawalerski</a></li>
+                        <li><a href="cennik-jubileusz.pdf" target="_blank">Spotkania rodzinne / jubileusze</a></li>
+                        <li><a href="cennik-teksty.pdf" target="_blank">Teksty z duszą</a></li>
+                        <li><a href="cennik-kalendarz.pdf" target="_blank">Kalendarz spotkań</a></li>
+                        <li><a href="cennik-biznesowy.pdf" target="_blank">Pakiet biznesowy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#kalendarz">Kalendarz</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <a href="brief.html" class="button">Wypełnij brief online</a>
+        </nav>
+        <div class="welcome-banner">
+            🎀 Witaj w świecie pięknych słów i wyjątkowych chwil!
+        </div>
+    </header>
+
+    <section id="hero">
+        <h2>Tworzę wyjątkowe chwile i słowa z duszą</h2>
+        <p>Organizuję wydarzenia i piszę na każdą okazję</p>
+    </section>
+
+    <section id="o-mnie">
+        <h2>O mnie</h2>
+        <p>Nazywam się Patrycja i uwielbiam tworzyć piękne rzeczy – zarówno wizualnie, jak i słownie. Organizuję wydarzenia oraz piszę teksty z lekkością i pasją, które zapadają w pamięć.</p>
+    </section>
+
+    <section id="oferta">
+        <h2>Oferta</h2>
+        <ul>
+            <li>Organizacja imprez: wieczory panieńskie, kawalerskie, baby shower, urodziny, spotkania rodzinne</li>
+            <li>Teksty: zaproszenia, przemowy, wiersze, bileciki, dedykacje, dyplomy</li>
+            <li>Pomoc w organizacji kalendarza spotkań</li>
+        </ul>
+    </section>
+
+    <section id="opinie">
+        <h2>Opinie</h2>
+        <blockquote>"Współpraca z Patrycją to czysta przyjemność! Wszystko było dopięte na ostatni guzik." – Anna</blockquote>
+        <blockquote>"Tekst na zaproszeniu wzruszył wszystkich gości. Polecam z całego serca!" – Kasia</blockquote>
+        <blockquote>"Pisane z lekkością to był strzał w 10. Cała organizacja wieczoru panieńskiego wyszła super. Zero stresu i nerwów." – Jagoda Walczyk</blockquote>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <a href="images/galeria1.jpg" target="_blank"><img src="images/galeria1.jpg" alt="Galeria 1" class="gallery-img" /></a>
+            <a href="images/galeria2.jpg" target="_blank"><img src="images/galeria2.jpg" alt="Galeria 2" class="gallery-img" /></a>
+            <a href="images/galeria3.jpg" target="_blank"><img src="images/galeria3.jpg" alt="Galeria 3" class="gallery-img" /></a>
+        </div>
+    </section>
+
+    <section id="cennik">
+        <h2>Cennik</h2>
+        <div class="cennik-grid">
+            <div class="cennik-box"><h3>Organizacja wydarzeń</h3><a href="cennik-wydarzenia.pdf" target="_blank">PDF</a></div>
+            <div class="cennik-box"><h3>Wieczór panieński / kawalerski</h3><a href="cennik-wieczor.pdf" target="_blank">PDF</a></div>
+            <div class="cennik-box"><h3>Spotkania rodzinne / jubileusze</h3><a href="cennik-jubileusz.pdf" target="_blank">PDF</a></div>
+            <div class="cennik-box"><h3>Teksty z duszą</h3><a href="cennik-teksty.pdf" target="_blank">PDF</a></div>
+            <div class="cennik-box"><h3>Kalendarz spotkań</h3><a href="cennik-kalendarz.pdf" target="_blank">PDF</a></div>
+            <div class="cennik-box"><h3>Pakiet biznesowy</h3><a href="cennik-biznesowy.pdf" target="_blank">PDF</a></div>
+        </div>
+    </section>
+
+    <section id="kalendarz">
+        <h2>📅 Zarezerwuj termin</h2>
+        <p>Wybierz dogodny termin, a ja skontaktuję się z Tobą, by potwierdzić szczegóły.</p>
+        <form action="https://formsubmit.co/prostopomagam@gmail.com" method="POST">
+            <input type="text" name="Imię i nazwisko" placeholder="Imię i nazwisko" required>
+            <input type="email" name="Email" placeholder="Twój email" required>
+            <input type="date" name="Data spotkania" required>
+            <input type="time" name="Godzina spotkania" required>
+            <textarea name="Dodatkowe informacje" placeholder="Co chciałabyś/chciałbyś omówić?" required></textarea>
+            <button type="submit">Zarezerwuj termin</button>
+        </form>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>📞 <a href="tel:536332984">536-332-984</a></p>
+        <p>📧 <a href="mailto:prostopomagam@gmail.com">prostopomagam@gmail.com</a></p>
+        <p>📸 <a href="https://www.instagram.com/pisane_z_lekkoscia_eventy/" target="_blank">Instagram</a></p>
+        <form action="https://formsubmit.co/prostopomagam@gmail.com" method="POST">
+            <input type="text" name="Imię i nazwisko" placeholder="Imię i nazwisko" required />
+            <input type="email" name="Email" placeholder="Twój email" required />
+            <textarea name="Wiadomość" placeholder="W czym mogę pomóc?" required></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pisane z lekkością</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Zdjęcie w powiększeniu">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.close');
+
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'block';
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
