@@ -229,3 +229,40 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+#statystyki {
+  background-color: #fff7fb;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#statystyki h2 {
+  margin-bottom: 30px;
+  color: #c55ea1;
+}
+
+.liczniki {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.licznik-box {
+  background-color: #fff0f5;
+  border-radius: 12px;
+  padding: 20px;
+  width: 180px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.ikona {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.liczba {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d04a89;
+}
+
