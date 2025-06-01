@@ -150,6 +150,38 @@
     <h3>Czy wystawiasz fakturę?</h3>
     <p>Tak! Na każdą wykonaną usługę mogę wystawić rachunek lub fakturę uproszczoną.</p>
   </div>
+      <script>
+  const liczniki = document.querySelectorAll(".liczba");
+  let animowane = false;
+
+  function animujLicznik() {
+    if (animowane) return;
+    const topSekcji = document.getElementById("statystyki").getBoundingClientRect().top;
+    const wysokoscOkna = window.innerHeight;
+
+    if (topSekcji < wysokoscOkna - 100) {
+      liczniki.forEach(el => {
+        const cel = +el.dataset.number;
+        let i = 0;
+        const krok = Math.ceil(cel / 50);
+
+        const interwal = setInterval(() => {
+          i += krok;
+          if (i >= cel) {
+            el.textContent = cel;
+            clearInterval(interwal);
+          } else {
+            el.textContent = i;
+          }
+        }, 30);
+      });
+      animowane = true;
+    }
+  }
+
+  window.addEventListener("scroll", animujLicznik);
+</script>
+
       <section id="statystyki" class="scroll-reveal">
   <h2>📊 Statystyki z serca pracy</h2>
   <div class="liczniki">
