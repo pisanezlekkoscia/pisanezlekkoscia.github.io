@@ -217,3 +217,15 @@ footer {
   font-size: 1.1em;
   color: #a94a7c;
 }
+/* ANIMACJA: Fade-in on scroll */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
