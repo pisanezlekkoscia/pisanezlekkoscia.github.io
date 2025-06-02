@@ -323,7 +323,231 @@ a:hover {
   color: #d04a89;
   margin: 0;
 }
+/* PODSTAWY */
+body {
+  background-color: #f4f0fa;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
 
+h1, h2, h3 {
+  color: #6a307d;
+}
+
+a {
+  color: #a75d67;
+  text-decoration: none;
+}
+
+/* NAGŁÓWEK I NAWIGACJA */
+header {
+  background-color: #ffe3ec;
+  padding: 1.5em 1em;
+  text-align: center;
+  border-bottom: 2px solid #ffc9da;
+}
+
+.logo-container img {
+  max-width: 240px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  font-weight: bold;
+}
+
+/* DROPDOWN CENNIK */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 220px;
+  border: 1px solid #eee;
+  z-index: 1;
+}
+.dropdown-content li {
+  display: block;
+}
+.dropdown-content li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* BANER POWITALNY */
+.welcome-banner {
+  background: linear-gradient(to right, #ffd4ec, #fbe8f3);
+  color: #7c2264;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* SEKCJE */
+section {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.scroll-reveal {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* OFERTA */
+.oferta-boxy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.oferta-box {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff8fc;
+  border: 1px solid #f3d7e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* CENNIK */
+.cennik-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.cennik-box {
+  background-color: #fff6fb;
+  border: 1px solid #f3d7e6;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* GALERIA */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.gallery-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* FORMULARZE */
+form input, form textarea {
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 10px;
+  border: 1px solid #e6bcd1;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #d04a89;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #b03a74;
+}
+
+/* OPINIE */
+blockquote {
+  background-color: #fff0f6;
+  border-left: 4px solid #d06c98;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 6px;
+  font-style: italic;
+}
+.link-opinia {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* FAQ + DLACZEGO WARTO */
+.faq-item, .warto-box {
+  background-color: #fef6fb;
+  padding: 15px;
+  border-left: 4px solid #cc77a7;
+  margin: 1em 0;
+  border-radius: 6px;
+}
+
+/* STATYSTYKI */
+#statystyki {
+  background-color: #fff7fb;
+  text-align: center;
+}
+.statystyki-boxy {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.statystyka {
+  padding: 1em;
+}
+.statystyka h3 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  color: #b2467d;
+}
+
+/* STOPKA */
+footer {
+  background-color: #ffe3ec;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
 .statystyka p {
   margin-top: 10px;
   font-size: 16px;
