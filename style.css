@@ -304,3 +304,28 @@ a {
 a:hover {
   color: #c94f85;
 }
+#statystyki {
+  background-color: #fff6fb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.statystyki-boxy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.statystyka h3 {
+  font-size: 36px;
+  color: #d04a89;
+  margin: 0;
+}
+
+.statystyka p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4b3d45;
+}
