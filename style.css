@@ -265,4 +265,42 @@ footer {
   font-weight: bold;
   color: #d04a89;
 }
+body {
+  background-color: #f4f0fa; /* pastelowy lawendowy */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b3d45; /* ciemniejszy niż #333, bardziej fioletowy */
+  font-size: 17px;
+  line-height: 1.6;
+}
+h2 {
+  font-size: 28px;
+  color: #7c2f58; /* fiolet głęboki */
+  margin-bottom: 0.5em;
+}
 
+h3 {
+  font-size: 20px;
+  color: #a5426e;
+  font-weight: 600;
+}nav ul li a {
+  color: #7c2f58;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.oferta-box p,
+.cennik-box p {
+  color: #4b3d45;
+  font-size: 16px;
+  font-weight: 500;
+}
+a {
+  color: #a5426e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c94f85;
+}
